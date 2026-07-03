@@ -145,6 +145,34 @@ O relatório foi desenhado para acompanhar indicadores-chave e suportar análise
 - Total Orders
 - Average Pizzas Per Order
 
+### Definição das Medidas
+
+As seguintes medidas do dashboard foram criadas no Power BI com base na view analítica:
+
+```DAX
+Total Revenue = SUM(vw_pizza_sales_analytics[total_price])
+
+Total Pizzas Sold = SUM(vw_pizza_sales_analytics[quantity])
+
+Total Orders = DISTINCTCOUNT(vw_pizza_sales_analytics[order_id])
+
+Average Order Value = [Total Revenue] / [Total Orders]
+
+Average Pizzas Per Order = [Total Pizzas Sold] / [Total Orders]
+
+Medium Quantity =
+AVERAGEX(
+	VALUES(vw_pizza_sales_analytics[pizza_name]),
+	CALCULATE([Total Pizzas Sold])
+)
+
+Medium Revenue Per Pizza =
+AVERAGEX(
+	VALUES(vw_pizza_sales_analytics[pizza_name]),
+	CALCULATE([Total Revenue])
+)
+```
+
 ### Gráficos Gerados
 
 Para explorar o comportamento das vendas e facilitar a leitura executiva, o dashboard inclui:
