@@ -1,0 +1,80 @@
+{
+  "name": "PizzaCorporateTheme",
+  "dataColors": [
+    "#C1272D",
+    "#E8602C",
+    "#F4A825",
+    "#5C3A21",
+    "#8C1C13",
+    "#F2C879",
+    "#7A9E7E",
+    "#4A4A48"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#3A2A1E",
+  "tableAccent": "#C1272D",
+  "good": "#7A9E7E",
+  "neutral": "#F4A825",
+  "bad": "#8C1C13",
+  "maximum": "#C1272D",
+  "center": "#F4A825",
+  "minimum": "#F2C879",
+  "textClasses": {
+    "callout": {
+      "color": "#C1272D",
+      "fontFace": "Segoe UI Semibold"
+    },
+    "title": {
+      "color": "#3A2A1E",
+      "fontFace": "Segoe UI Semibold"
+    },
+    "header": {
+      "color": "#3A2A1E",
+      "fontFace": "Segoe UI Semibold"
+    },
+    "label": {
+      "color": "#4A4A48",
+      "fontFace": "Segoe UI"
+    }
+  },
+  "visualStyles": {
+    "*": {
+      "*": {
+        "background": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#FFFFFF" } },
+            "transparency": 0
+          }
+        ],
+        "border": [
+          {
+            "show": true,
+            "color": { "solid": { "color": "#EDE3D9" } },
+            "radius": 6
+          }
+        ]
+      }
+    },
+    "page": {
+      "*": {
+        "background": [
+          {
+            "color": { "solid": { "color": "#FFF8F0" } },
+            "transparency": 0
+          }
+        ]
+      }
+    },
+    "card": {
+      "*": {
+        "labels": [
+          { "color": { "solid": { "color": "#C1272D" } }, "fontSize": 28 }
+        ],
+        "categoryLabels": [
+          { "color": { "solid": { "color": "#4A4A48" } }, "fontSize": 12 }
+        ]
+      }
+    }
+  }
+}
